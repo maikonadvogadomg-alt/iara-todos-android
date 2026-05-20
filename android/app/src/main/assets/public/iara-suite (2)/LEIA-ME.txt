@@ -1,0 +1,108 @@
+╔═══════════════════════════════════════════════════════════════╗
+║           ⚡  IARA SUITE  v2.0 — Standalone                 ║
+║                                                               ║
+║  Code Editor  ·  Terminal Linux  ·  APK Builder              ║
+║  Site Extractor  ·  IA com auto-detecção de chave            ║
+║                                                               ║
+║  Advogado Maikon Caldeira — OAB/MG 183712                   ║
+╚═══════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+COMO ABRIR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Windows:    Clique duas vezes em  iniciar.bat
+  Mac/Linux:  Execute  ./iniciar.sh  no terminal
+  Direto:     Arraste  index.html  para o navegador
+
+  ✅ SEM instalação   ✅ SEM servidor   ✅ SEM Replit
+  ✅ 100% standalone  ✅ Funciona offline (exceto Terminal e IA)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OS 4 MÓDULOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💻 CODE EDITOR
+  Editor de código com sistema de arquivos virtual.
+  Importa/exporta ZIPs. Suporte a HTML, CSS, JS, Python, Java, etc.
+  IA integrada: chat com qualquer provedor via chave direta.
+
+🖥 TERMINAL LINUX (sem servidor!)
+  4 opções de terminal online gratuito:
+  • WebVM    — Alpine Linux via WebAssembly (sem servidor, offline)
+  • Copy.sh  — Emulador x86 Linux no navegador
+  • CoCalc   — Terminal Linux na nuvem
+  • Repl.it  — Bash online gratuito
+
+📦 APK BUILDER
+  3 destinos de build (sem Replit, sem servidor):
+  • Capacitor + Android Studio → APK local
+  • EAS + GitHub Actions       → APK na nuvem (automático)
+  • Electron                   → Executável PC (Win/Mac/Linux)
+  Orientação: retrato, paisagem ou AMBAS.
+
+🔍 SITE EXTRACTOR
+  Extrai scripts de cálculo de sites jurídicos via proxy público.
+  (allorigins.win → corsproxy.io → codetabs.com como fallback)
+  Detecta: fórmulas matemáticas, AJAX/fetch, cálculos do INSS.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONFIGURAR IA (botão 🔑 Chaves API no topo)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  AUTO-DETECÇÃO pelo prefixo da chave:
+
+  gsk_...    → Groq       GRÁTIS  console.groq.com
+  AIza...    → Gemini     GRÁTIS  aistudio.google.com
+  sk-ant-... → Anthropic  pago    console.anthropic.com
+  sk-or-...  → OpenRouter variado openrouter.ai
+  sk-...     → OpenAI     pago    platform.openai.com
+  xai-...    → xAI Grok   pago    console.x.ai
+  ap-...     → Mistral    pago    console.mistral.ai
+  ds-...     → DeepSeek   pago    platform.deepseek.com
+
+  Cole a chave em Slot 1, clique "Ativar" → Salvar.
+  Chamada DIRETA ao servidor da provedora — sem proxy Replit.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GERAR APK (aba APK Builder)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  OPÇÃO A — Capacitor + Android Studio (APK local):
+    1. Arraste o ZIP do seu site
+    2. Preencha Nome e Package ID (ex: br.adv.maikoncaldeira.app)
+    3. Escolha orientação (retrato/paisagem/ambas)
+    4. Clique "Gerar ZIP do Projeto"
+    5. Extraia o ZIP → npm install → npx cap copy android
+    6. Abra Android Studio → pasta android/ → Build APK
+
+  OPÇÃO B — GitHub Actions (sem Android Studio):
+    1. Mesmos passos 1-4 acima
+    2. Suba o ZIP no GitHub
+    3. APK gerado automaticamente — baixe em Releases
+
+  OPÇÃO C — Electron (executável PC):
+    1. Mesmos passos 1-4 com destino "Electron"
+    2. npm install && npm start   (para rodar)
+    3. npm run dist               (para gerar .exe/.dmg/.AppImage)
+
+  GERAR APK DO PRÓPRIO IARA SUITE:
+    1. Clique "Demo (Iara Suite)" no APK Builder
+    2. Escolha orientação "Ambas"
+    3. Gere o ZIP → compile normalmente
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AVISO IMPORTANTE — CORS e Terminal
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  O Terminal Linux usa serviços externos gratuitos (WebVM, etc).
+  Requer conexão com a internet.
+  O WebVM roda Alpine Linux COMPLETO via WebAssembly no navegador.
+
+  O Site Extractor usa proxies públicos para bypass de CORS.
+  Sites com proteção Cloudflare podem bloquear.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Versão: 2.0 · Build: 2025 · Sem dependência do servidor Replit
+Maikon Caldeira — OAB/MG 183712
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

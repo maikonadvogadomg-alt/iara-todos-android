@@ -1,0 +1,18 @@
+{
+  "name": "iara-suite",
+  "version": "2.0.0",
+  "description": "Iara Suite — Code Editor, Terminal Linux, APK Builder, Site Extractor",
+  "private": true,
+  "scripts": {
+    "copy": "npx cap copy android",
+    "open": "npx cap open android",
+    "build": "cd android && ./gradlew assembleDebug --no-daemon"
+  },
+  "dependencies": {
+    "@capacitor/android": "6.1.2",
+    "@capacitor/core": "6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "6.1.2"
+  }
+}

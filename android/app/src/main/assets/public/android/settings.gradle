@@ -1,0 +1,2 @@
+rootProject.name = 'IaraSuite'
+include ':app'

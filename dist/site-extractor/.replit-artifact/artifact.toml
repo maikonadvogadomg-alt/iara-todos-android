@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/site-extractor/"
+title = "Site Extractor"
+version = "1.0.0"
+id = "artifacts/site-extractor"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/site-extractor/" ]
+localPort = 24517
+
+[services.development]
+run = "pnpm --filter @workspace/site-extractor run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/site-extractor", "run", "build" ]
+publicDir = "artifacts/site-extractor/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24517"
+BASE_PATH = "/site-extractor/"
